@@ -1,3 +1,5 @@
 export class ChatService {
-  public static 
+  public static authorize(): void {
+
+  }
 }

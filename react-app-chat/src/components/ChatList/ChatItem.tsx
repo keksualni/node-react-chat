@@ -6,16 +6,20 @@ import './ChatItem.css';
 interface IChatItemProps {
   item: Chat;
   lastMessage: Message;
+  onChatClick: (chat: Chat) => void;
 }
 
 export const ChatItem: React.FunctionComponent<IChatItemProps> = (props: IChatItemProps) => {
   return (
-    <div className="chatItem">
-      <div className="header">
-        <h2>{props.item.name}</h2>
+    <div className="chat-item">
+      <div className="chat-item-header">
+        {props.item.name}
       </div>
-      <div className="body">
-        <h3>{props.lastMessage.sender.firstName} {props.lastMessage.sender.secondName}</h3>: {props.lastMessage.text}
+      <div className="chat-item-body">
+        <div className="body-sender-name">
+          {props.lastMessage.sender.firstName} {props.lastMessage.sender.secondName}:
+        </div>
+        {props.lastMessage.text}
       </div>
     </div>
   );

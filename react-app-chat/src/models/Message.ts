@@ -1,7 +1,7 @@
 import { User } from "./User";
 
 export interface Message {
-  id: string;
+  id: number;
   sender: User;
   resolver: User;
   text: string;

@@ -8,19 +8,17 @@ import './ChatList.css';
 interface IChatListProps {
   chats: Chat[];
   getLastChatMessage: (chatId: number) => Message;
+  onChatClick: (chat: Chat) => void;
 }
 
 export const ChatList: React.FunctionComponent<IChatListProps> = (props: IChatListProps) => {
   return (
-    <div className="chatList">
-      <div className="header">
-        Currently online
-      </div>
-      <SearchBar/>
+    <div className="chat-list">
       {props.chats.map((item: Chat) => {
         const lastChatMessage: Message = props.getLastChatMessage(item.id);
 
         return <ChatItem
+          onChatClick={props.onChatClick}
           item={item}
           lastMessage={lastChatMessage}
         />
