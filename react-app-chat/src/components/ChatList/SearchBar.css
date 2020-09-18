@@ -1,0 +1,35 @@
+.searchBar {
+  width: 100%;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid gray;
+}
+
+.searchBar .input {
+  transition: 0.5s;
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 16px;
+  padding: 4px;
+  padding-right: 30px;
+  width: 100%;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.searchBar .input:active,:focus {
+  outline: none;
+}
+
+.searchBar .input:focus {
+  border-color: black;
+}
+
+.searchBar .searchIcon {
+  position: absolute;
+  width: 18x;
+  height: 18px;
+  right: 6px;
+}
