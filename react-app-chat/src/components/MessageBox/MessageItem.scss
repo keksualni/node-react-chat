@@ -1,0 +1,15 @@
+.message-item {
+  padding: 4px;
+  display: block;
+  clear: both;
+}
+
+.message-item.other-user {
+  background: rgb(165, 218, 248);
+  float: left;
+}
+
+.message-item.current-user {
+  background: white;
+  float: right;
+}

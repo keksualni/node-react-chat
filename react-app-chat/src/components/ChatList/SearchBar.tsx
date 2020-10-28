@@ -1,5 +1,5 @@
 import React from 'react';
-import './SearchBar.css';
+import './SearchBar.scss';
 import SearchIcon from '../../icons/search.svg';
 import { Chat } from '../../models/Chat';
 import { User } from '../../models/User';
@@ -12,7 +12,7 @@ interface ISearchBarProps {
 export const SearchBar: React.FunctionComponent<ISearchBarProps> = () => {
   return (
     <div className="searchBar">
-      <input type="text" className="input" placeholder="Type to search"/>
+      <input type="text" className="input" placeholder="Search"/>
       <img src={SearchIcon} alt="search" className="searchIcon"/>
     </div>
   );

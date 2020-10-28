@@ -1,0 +1,22 @@
+.chat-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;  
+
+  .left-bar {
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(162, 153, 165);
+  }
+
+  .right-bar {
+    width: 75vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(190, 179, 194);
+  }
+}

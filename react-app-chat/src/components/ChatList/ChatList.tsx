@@ -2,8 +2,7 @@ import React from 'react';
 import { Chat } from '../../models/Chat';
 import { Message } from '../../models/Message';
 import { ChatItem } from './ChatItem';
-import { SearchBar } from './SearchBar';
-import './ChatList.css';
+import './ChatList.scss';
 
 interface IChatListProps {
   chats: Chat[];
